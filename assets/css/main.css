@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color:#2e3192;
+    --secondary-color:#eef7ff;
+    --font-header-color:#dd3334;
+    --font-color:#898989;
+
+}
+header .headerTap{
+    background: var(--main-color);
+    width: 100%;
+    padding: 5px;   
+}
+header .headerTap p{
+    background-color: transparent; 
+    color: white; 
+}
+header .headerTap .container{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+header .headerTap p{
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand{
+    width: 50px;
+}
+.nav-item{
+    text-transform:uppercase ;
+}
+.nav-item .nav-link{
+    color: var(--main-color);
+}
+header #navbarTogglerDemo01{
+    justify-content: space-between;
+}
+/* start slaidre style */
+.carousel-inner{
+    height: 500px;
+}
+.bd-placeholder-img{
+    height: 500px;
+    width: 100%;
+}
+.slider .carousel-caption > h1{
+    background-color: white;
+    color: var(--main-color);
+    width: fit-content;
+}
+.slider .carousel-caption > p{
+    background-color: white;
+    color: var(--font-color);
+    width: fit-content;
+}
+.btn-white{
+    background-color: white;
+    color: var(--main-color);
+}
+.card-body .card-text{
+    color: var(--font-color);
+}
+
+#button-card{
+    border: none;
+    background: var(--main-color);
+    border-radius: 0 0 3px 3px;
+    font-weight: bold;
+    color: white;
+}
+.card-body-header{
+    color: var(--main-color);
+    text-align: center;
+}
+.working-p {
+    margin-bottom: 12px;
+    text-align: justify !important;
+    background-color: transparent;
+}
+.text-body-emphasis{
+    color: var(--main-color);
+    margin-bottom: 10px !important;
+    font-size: 15px !important;
+
+}
+.align-items-start p{
+    color: var(--font-color);
+    font-size: 12px;
+}
+.align-items-start img{
+    width: 60px;
+}
+/* start dental style*/
+#dental1{
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dental-content{
+    width: 60%;
+    position: relative;
+}
+.dental-content h1{
+    color: var(--main-color);
+    margin: 10px 0;
+    background-color: transparent;
+    font-weight: bold;
+
+}
+ .dental-content p:first-child{
+    color: var(--font-header-color);
+    text-transform: uppercase;
+    background-color: transparent;
+}
+ .dental-content #text{
+    color: var(--font-color);
+    font-size: 12px;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+ .dental-content .atrrea{
+    color: var(--font-header-color);
+    background-color: transparent;
+}
+.segenature{
+    position: absolute;
+    bottom: -38px;
+    transform: rotate(270deg);
+    opacity: 0.4;
+
+}
+.what-people{
+    text-align: center;
+}
+ .h4-title{
+text-transform: uppercase;
+color: var(--font-header-color);
+font-size: 15px;
+text-align: center;
+}
+.h2-title{
+text-transform: capitalize;
+color: var(--main-color);
+text-align: center;
+}
+.p-title{
+    text-transform: capitalize;
+    color: var(--font-color);
+    text-align: center;
+    width: 100%;
+    }
+.fw-normal{
+    color: var(--main-color);
+}
+.item-p{
+    text-align: center;
+    color: var(--font-color);
+}
+.item-span{
+    color: var(--font-header-color);
+    text-transform: uppercase;
+}
+.sperateSection{
+    background-color: var(--main-color);
+    padding: 10px 0;
+}
+.sperateSection h2 {
+    background-color: transparent;
+    color: white;
+}
+.sperateSection h2 >span{
+    color: #dd3334;
+}
+
+.btn-span{
+    display: inline-block;
+    margin-left: 150px;
+}
+.slide3{
+    background-color: #fff5ff;
+}
+.slide3 > .container{
+    padding: 0;
+}
+.slide-nav{
+    border-bottom: 1px solid var(--font-header-color);
+}
+.slide-nav ul{
+list-style: none;
+display: flex;
+justify-content: space-between;
+margin-bottom: 0;
+padding: 0;
+}
+.slide-nav ul li{
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-bottom: 10px;
+    display: block;
+    width: 25%;
+    text-align: center;
+
+}
+.slide-nav ul li.active{
+    border-bottom: 1px solid var(--font-header-color);
+
+}
+.lead{
+    color: var(--font-color);
+    background-color: transparent;
+}
+
+.team .album .card{
+
+
+    border: none;
+    border-radius: none;
+}
+
+#dental2{
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#dental2 .dental-content .text{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 40px;
+}
+#dental2 .dental-content table td{
+    padding: 5px;
+    text-align: center;
+}
+#dental2 .dental-content table tr:last-child td{
+    text-align: start;
+}
+#dental2 .dental-content textarea{
+    background-color: transparent;
+    border-radius: 5px;
+    width: 100%;
+}
+.real .album .card{
+    border: none;
+    border-radius: none;
+}
+.cardTitle{
+    text-transform: uppercase;
+    color: var(--font-header-color);
+    text-align: start;
+    font-size: 4;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.cardSupTitle{
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: start;
+}
+.cardP{
+    color: var(--font-color);
+    text-align: start;
+
+}
+
+.badge{
+    padding: 12px;
+    text-align: center;
+    transform: translate(50px,20px);
+    background-color: var(--main-color);
+}
+
+.slid-circle{
+    width: 15px !important;
+    height: 15px !important;
+}
+footer{
+    background:#fff5ff ;
+}

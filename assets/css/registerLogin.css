@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+@font-face {
+  font-family: myFont;
+  src: url(../fonts/DroidKufi-Regular.ttf);
+}
+body {
+  background-color: #eee;
+  font-family: myFont;
+}
+:root{
+  --background-color:#2386c8;
+  --main-color:white;
+  --padding-top:60px;
+  --padding-botton:60px;
+}
+ /* Start rgister page style */
+ .register-login-Page{
+  height: 100vh;
+  background: linear-gradient(#74ebd5,#acb6e5);
+ }
+ .register{
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%,-50%);
+  z-index: 1;  
+}
+.btn-register{
+  border: none;
+  background-color: brown;
+  height: 45px;
+  color: white;
+  transition: all 0.3s ease;
+  width: 100%;
+
+}
+.btn-register:hover{
+  background-color: var(--background-color);
+  border: 1px solid white;
+
+}
+.btn-div:nth-child(2) .btn-register{
+  background-color: blue;
+}
+.btn-div:nth-child(2) .btn-register:hover{
+  background-color: var(--background-color);
+  border: 1px solid white;
+}
+table input{
+  height: 35px;
+  outline: none;
+  
+}
+table td{
+  height: 30px;
+  vertical-align: middle;
+}
+table td span{
+  color: brown;
+}
+input[type='email'],input[type='password']{
+width: 100%;
+} 
+
+.read div{
+font-size: 14px;
+display: flex;
+gap: 10px;
+align-items: center;
+}
+.read > div > label > a{
+text-decoration: none;
+}
+input[type='submit']{
+width: 100px;
+color: white;
+background:var(--background-color);
+border: none;
+transition: all 0.3s ease;
+}
+input[type='submit']:hover{
+  background-color: var(--main-color);
+  color: black;
+}
+table input::placeholder{
+  font-size: 14px;
+  opacity: 0.5;
+  padding-right: 10px;
+}
+
+#help-list > li > a{
+  text-decoration: none;
+}
+.login{
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%,-50%);
+  z-index: 1;  
+  width: 500px;
+}
+ /* End rgister page style */
