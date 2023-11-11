@@ -46,10 +46,19 @@ header nav ul li{
     cursor: pointer;
 }
 
+header nav ul li.active{
+    border-bottom: 0.2rem solid var(--primary-color);
+}
+
 header nav ul li:hover{
     background-color: var(--primary-color);
+    cursor: pointer;
     color: var(--font-header-color);
     transition: all 1s ease;
+}
+
+header nav ul li:hover a{
+    color: var(--secondary-color);
 }
 
 header nav ul li a{
@@ -70,7 +79,7 @@ header nav .navigation .bars-icon{
 }
 
 header nav .navigation .searsh{
-    margin-right: 20rem;
+    margin-right: 22rem;
 }
 
 header nav .navigation .searsh .searsh-icon{
@@ -80,7 +89,7 @@ header nav .navigation .searsh .searsh-icon{
 
 header nav .navigation .searsh input{
     width: 18rem;
-    height: 4rem;
+    height: 3.4rem;
     padding: 0 3rem;
     border: 0.2rem solid var(--font-header-color);
     border-radius: 1rem;
@@ -99,12 +108,12 @@ header nav .messages .message-icon::after{
     position: absolute;
     top: -1.2rem;
     left: 0.99rem;
-    height: 2rem;
+    height: 1.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.8rem;
-    width: 2rem;
+    font-size: 0.7rem;
+    width: 1.8rem;
     border-radius: 50%;
     color: var(--white-color);
     background-color: red;
@@ -114,7 +123,7 @@ header nav hr{
     margin: 0 auto;
     color: white;
     opacity: 1;
-    width: 90%;
+    width: 80%;
 }
 
 
