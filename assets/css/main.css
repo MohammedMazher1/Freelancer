@@ -1,7 +1,13 @@
 @font-face {
+    font-family:'DroidKufi-Bold';
+    src: url(../fonts/DroidNaskh-Bold.ttf);
+}
+
+@font-face {
     font-family:'DroidKufi-Regular';
     src: url(../fonts/DroidKufi-Regular.ttf);
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -11,17 +17,105 @@
 /*#region Variable */
 
 :root{
-    --main-color:#ED7D31;
+    --primary-color:#ED7D31;
     --secondary-color:#4F4A45;
+    --white-color:#FFF;
     --font-header-color:#4F4A45;
-    --font-color:#898989;
-    --font-header:DroidKufi-Regular;
+    --font-text-color:#898989;
+    --font-header:'DroidKufi-Bold';
+    --font-text:'DroidKufi-Regular';
+    --font-header-size:1.5rem;
+    --font-text-size:0.9rem
 }
 
 /*#endregion Variable */
 
 /*#region Header*/
 
+header nav{
+    background-color: var(--secondary-color);
+    direction: rtl;
+}
+
+header nav .logo{
+    color: var(--primary-color);
+}
+
+header nav ul li{
+    padding: 1rem;
+    cursor: pointer;
+}
+
+header nav ul li:hover{
+    background-color: var(--primary-color);
+    color: var(--font-header-color);
+    transition: all 1s ease;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+}
+
+header nav .nav-icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+header nav .navigation .bars-icon{
+    font-size: 2.3rem;
+}
+
+header nav .navigation .searsh{
+    margin-right: 20rem;
+}
+
+header nav .navigation .searsh .searsh-icon{
+    color: var(--font-text-color);
+    right: 1rem;
+}
+
+header nav .navigation .searsh input{
+    width: 18rem;
+    height: 4rem;
+    padding: 0 3rem;
+    border: 0.2rem solid var(--font-header-color);
+    border-radius: 1rem;
+    transition: all 1s ease;
+}
+
+header nav .navigation .searsh input:hover{
+    border: none;
+    width: 29rem;
+    outline: 0.2rem solid var(--primary-color);
+}
+
+header nav .notification .notification-icon::after,
+header nav .messages .message-icon::after{
+    content: "99+";
+    position: absolute;
+    top: -1.2rem;
+    left: 0.99rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    width: 2rem;
+    border-radius: 50%;
+    color: var(--white-color);
+    background-color: red;
+}   
+
+header nav hr{
+    margin: 0 auto;
+    color: white;
+    opacity: 1;
+    width: 90%;
+}
 
 
 /*#endregion  Header*/
