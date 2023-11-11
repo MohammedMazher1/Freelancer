@@ -1,3 +1,7 @@
+@font-face {
+    font-family:'DroidKufi-Regular';
+    src: url(../fonts/DroidKufi-Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,11 +15,10 @@
     --secondary-color:#4F4A45;
     --font-header-color:#4F4A45;
     --font-color:#898989;
-
+    --font-header:DroidKufi-Regular;
 }
 
 /*#endregion Variable */
-
 
 /*#region Header*/
 
