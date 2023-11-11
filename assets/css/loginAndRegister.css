@@ -1,0 +1,87 @@
+@font-face {
+    font-family:'DroidKufi-Regular';
+    src: url(../fonts/DroidKufi-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-header);
+}
+
+/*#region Variable */
+
+:root{
+    --main-color:#ED7D31;
+    --secondary-color:#4F4A45;
+    --font-header-color:#4F4A45;
+    --font-color:#898989;
+    --font-header:DroidKufi-Regular;
+}
+/*start login page style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    --webkit-backdrop-filter: blur(10px);
+}
+.loginDiv{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.37);
+    vertical-align: middle;
+    border-radius: 10px;
+    transition: all 0.5 ease;
+}
+.loginDiv .inputText{
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ed7c319f;
+    padding: 5px;
+    width: 100%;
+}
+.loginDiv .inputText::placeholder{
+   opacity: 0.6;
+}
+.loginDiv .loginSubmit{
+    background: #ED7D31;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+.loginDiv table{
+    border-spacing: 15px;
+    border-collapse: separate;
+    width: 400px;
+    padding: 5px;
+}
+.active{
+    display: none;
+}
+.loginDiv span#login,span#register{
+    cursor: pointer;
+    opacity: 0.7;
+    text-decoration: underline;
+
+}
+.loginDiv .row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginDiv table td .fa-brands{
+    color: var(--main-color);
+    margin-left: 10px;
+    font-size: 20px;
+}
+/*  */
+
+/* end login page style */
