@@ -15,12 +15,21 @@
     font-family: var(--font-header);
 }
 
+/* 
+ألوان متناسقة
+164863
+427D9D
+9BBEC8
+DDF2FD
+*/
+
 /*#region Variable */
 
 :root{
-    --primary-color:#ED7D31;
-    --secondary-color:#4F4A45;
+    --primary-color:#9BBEC8 ;
+    --secondary-color:#164863;
     --white-color:#FFF;
+    --light-white:#ffffffc4;
     --font-header-color:#4F4A45;
     --font-text-color:#898989;
     --font-header:'DroidKufi-Bold';
@@ -29,13 +38,16 @@
     --font-text-size:0.9rem
 }
 
+html{
+    direction: rtl;
+}
+
 /*#endregion Variable */
 
 /*#region Header*/
 
 header nav{
     background-color: var(--secondary-color);
-    direction: rtl;
 }
 
 header nav .logo{
@@ -138,6 +150,78 @@ header nav hr{
 
 /*#region Footer*/
 
+footer{
+    background-color: var(--secondary-color);
+    bottom: 0;
+    font-family: var(--font-text);
+}
+
+footer ul li{
+    cursor: pointer;
+    padding: 0.3rem;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: var(--light-white);
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+}
+
+footer ul li:hover a{
+    color: var(--white-color);
+}
+
+footer h4,footer h3{
+    color: var(--primary-color);
+}
+
+footer form input,
+footer form textarea{
+    background-color: transparent;
+    border: 0.18rem solid var(--white-color);
+    color: white;
+    font-family: var(--font-header);
+}
+
+footer form input:focus,
+footer form textarea:focus{
+    outline: none;
+}
+
+footer form button{
+    border: 0;
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    color: var(--white-color);
+    transition: all 0.5s ease;
+}
+
+footer form button:hover{
+    opacity: 1;
+    color: var(--secondary-color);
+}
+
+footer .leave-message hr{
+    opacity: 1;
+    color: var(--white-color);
+    width: 75%;
+    margin: 0 auto;
+}
+
+footer .footer-end .footer-icon{
+    font-size: 2rem;
+}
+
+footer .footer-end h6{
+    color: var(--white-color);
+}
+
+footer .footer-end .mkz-company a{
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 /*#endregion  Footer*/
