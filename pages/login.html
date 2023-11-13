@@ -1,76 +1,144 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bootstrap-5.2.3/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/registerLogin.css" />
-    <title>login</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- links -->
+
+  <link rel="stylesheet" href="../assets/lib/fontawesome-v6.4.2/css/all.css">
+  <link rel="stylesheet" href="../assets/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/loginAndRegister.css">
+
+  <title>Login page</title>
     <style>
         
     </style>
-  </head>
-  <body>
-     <div class="register-login-Page">
-        <div class="login">
-            <h3>تسجيل الدخول</h3> 
-            <div class="row row-cols-1 row-cols-sm-2 row-clos-md-2 mt-3 justify-content-between">
-                 <div class="btn-div col">
-                     <button  class="btn-register">
-                         <i class="fa-brands fa-google"></i>
-                         باستخدام جوجل
-                     </button>
-                 </div>
-                 <div class="btn-div col">
-                     <button class="btn-register">
-                     <i class="fa-brands fa-windows"></i>
-                       باستخدام مايكروسوفت
-                 </button>
-             </div>
-            </div>
-            <hr>
-            <form action="" method="post">
-             <table class="table table-borderless">
-                 <tr>
-                     <td colspan="2">البريد الإلكتروني
-                         <span>*</span>
-                     </td>
-                 </tr>
-                 <tr>
-                     <td colspan="2"><input type="email" placeholder="أدخل البريد الإلكتروني الخاص بك"></td>
-                 </tr>
-                 <tr>
-                     <td colspan="2">
-                         كلمة المرور
-                         <span>*</span>
-                     </td>
-                 </tr>
-                 <tr>
-                     <td colspan="2"><input type="password" placeholder="أدخل كلمة المرور  الخاص بك"></td>
-                 </tr>
-                 <tr>
-                     <td><input type="submit" value="تسجيل"></td>
-                     <td></td>
-                 </tr>
-             </table>
-             <dl id="help-list">
-                <dt>مساعدة</dt>
-                <li>
-                    <a href="#">لا أملك حساب بعد</a>
-                </li>
-                <li>
-                    <a href="#">فقدت كلمة المرور</a>
-                </li>
-                <li>
-                    <a href="#">لم يصلني رقم التفعيل</a>
-                </li>
-             </dl>
+</head>
+<body>
+  <main>
+     <div class="loginDiv">
+        <div class="login-box active">
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label for="usrename">اسم المستخدم</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="inputText" type="text" name="usrename" id="usrename" placeholder="اسم المستخدم"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="usrename">كلمة  المرور</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="inputText" type="password" name="password" id="password" placeholder="كلمة المرور"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="forget" name="forgetPass">
+                            <label for="forget">نسيت كلمة المرور</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span href="" id="login"> إشتراك</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="w-100 loginSubmit" value="ارسال">ارسال</span>
+                        </td>
+                    </tr>
+                </table>
+            </form>   
+        </div>
+        <div class="registere-box">
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label for="usrename">اسم المستخدم</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="inputText" type="text" name="usrename" id="usrename" placeholder="اسم المستخدم"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">الايميل</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="inputText" type="email" name="email" id="email" placeholder="freelancer@outlook.sa"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">رقم الهاتف</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="inputText" type="text" name="phone" id="phone" placeholder="776533887"></td>
+                    </tr>
+                   
+                    <tr>
+                        <td><label for="usrename">كلمة  المرور</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="inputText" type="password" name="password" id="password" placeholder="كلمة المرور"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirmPass">تاكيد كلمة  المرور</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="inputText" type="password" name="confirmPass" id="confirmPass" placeholder="تاكيد كلمة المرور المرور"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="forget" name="forgetPass">
+                            <label for="forget">نسيت كلمة المرور</label>
+                        </td>
+                        <!-- <td></td> -->
+                    </tr>
+                    <tr>
+                        <td>
+                            <span  id="register">تسجيل الدخول</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="fa-brands fa-google"></span>
+                                    <span>جوجل</span>
+                                </div>
+                                <div class="col">
+                                    <span class="fa-brands fa-windows"></span>
+                                    <span>ويندوز</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="w-100 loginSubmit" value="ارسال">ارسال</span>
+                        </td>
+                    </tr>
+                </table>
             </form>
-         </div>
-     </div>
-    
-    
-     <script src="bootstrap-5.2.3/dist/js/bootstrap.js"></script>
-  </body>
+        </div>
+    </div>
+  </main>
+<script src="../assets/lib/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/lib/jquery-3.7.1.js"></script>
+<script>
+    // $('.loginDiv:last-child').addClass('active')
+    $('#login').on('click',function(){
+        $('.loginDiv .login-box').addClass('active',500)
+        // $('.loginDiv:last-child').fadeIn()
+        $('.loginDiv .registere-box').removeClass('active',500)
+    })
+
+    $('#register').on('click',function(){
+        $('.loginDiv .registere-box').addClass('active')
+        // $('.loginDiv:last-child').fadeIn()
+        $('.loginDiv .login-box').removeClass('active')
+    })
+
+</script>
+</body>
 </html>

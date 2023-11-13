@@ -32,10 +32,12 @@ DDF2FD
     --light-white:#ffffffc4;
     --font-header-color:#4F4A45;
     --font-text-color:#898989;
-    --font-header:'DroidKufi-Bold';
-    --font-text:'DroidKufi-Regular';
+    --font-header:'DroidKufi-Regular';
+    --font-text:'DroidKufi-Bold';
     --font-header-size:1.5rem;
-    --font-text-size:0.9rem
+    --font-text-size:0.9rem;
+    --header-gradient-color: linear-gradient(to bottom, #164863 60%, #000);
+    --footer-gradient-color: linear-gradient(to bottom, #164863 35%, #000);
 }
 
 html{
@@ -47,7 +49,7 @@ html{
 /*#region Header*/
 
 header nav{
-    background-color: var(--secondary-color);
+    background: var(--header-gradient-color)
 }
 
 header nav .logo{
@@ -77,7 +79,7 @@ header nav ul li:hover a{
 header nav ul li a{
     text-decoration: none;
     color: var(--white-color);
-    font-family: var(--font-text);
+    font-family: var(--font-header);
     font-size: 1.1rem;
 }
 
@@ -151,9 +153,8 @@ header nav hr{
 /*#region Footer*/
 
 footer{
-    background-color: var(--secondary-color);
+    background: var(--footer-gradient-color);
     bottom: 0;
-    font-family: var(--font-text);
 }
 
 footer ul li{
@@ -181,7 +182,6 @@ footer form textarea{
     background-color: transparent;
     border: 0.18rem solid var(--white-color);
     color: white;
-    font-family: var(--font-header);
 }
 
 footer form input:focus,
@@ -202,7 +202,7 @@ footer form button:hover{
     color: var(--secondary-color);
 }
 
-footer .leave-message hr{
+footer .footer-divider{
     opacity: 1;
     color: var(--white-color);
     width: 75%;
@@ -222,6 +222,5 @@ footer .footer-end .mkz-company a{
     text-decoration: none;
     cursor: pointer;
 }
-
 
 /*#endregion  Footer*/

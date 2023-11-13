@@ -12,13 +12,27 @@
 /*#region Variable */
 
 :root{
-    --main-color:#ED7D31;
-    --secondary-color:#4F4A45;
+    --primary-color:#9BBEC8 ;
+    --secondary-color:#164863;
+    --white-color:#FFF;
+    --light-white:#ffffffc4;
     --font-header-color:#4F4A45;
-    --font-color:#898989;
-    --font-header:DroidKufi-Regular;
+    --font-text-color:#898989;
+    --font-header:'DroidKufi-Regular';
+    --font-text:'DroidKufi-Bold';
+    --font-header-size:1.5rem;
+    --font-text-size:0.9rem;
+    --header-gradient-color: linear-gradient(to bottom, #164863 60%, #000);
+    --footer-gradient-color: linear-gradient(to bottom, #164863 35%, #000);
 }
-/*start login page style */
+
+html{
+    direction: rtl;
+}
+
+/*#endregion Variable */
+
+
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +41,7 @@
 body{
     --webkit-backdrop-filter: blur(10px);
 }
+
 .loginDiv{
     position: absolute;
     top: 50%;
@@ -35,12 +50,12 @@ body{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.37);
     vertical-align: middle;
     border-radius: 10px;
-    transition: all 0.5 ease;
+    transition: all 1s ease;
 }
 .loginDiv .inputText{
     border-radius: 5px;
     outline: none;
-    border: 1px solid #ed7c319f;
+    border: 1px solid var(--secondary-color);
     padding: 5px;
     width: 100%;
 }
@@ -48,7 +63,7 @@ body{
    opacity: 0.6;
 }
 .loginDiv .loginSubmit{
-    background: #ED7D31;
+    background: var(--secondary-color);
     border: none;
     border-radius: 5px;
     padding: 5px;
