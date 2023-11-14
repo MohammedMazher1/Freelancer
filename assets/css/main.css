@@ -149,11 +149,14 @@ header nav hr{
 /*#region Main*/
 
 /* strart layout style */
+section{
+    height: fit-content;
+}
 .layout{
     height: fit-content;
     padding: 20px;
     display: grid;
-    background:linear-gradient(to top, #164863 60%, #000);
+    background:linear-gradient(to top, #164863, #000);
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -250,6 +253,7 @@ header nav hr{
 .business .album{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 .business .album div{
@@ -303,6 +307,42 @@ header nav hr{
 .big{
     grid-row: span 2;
     grid-column: span 2;
+}
+.aboutWeb .cover{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aboutWeb .cover .cont{
+    width: 400px;
+    display: flex;
+    border-radius: 10px 20px;
+    gap: 10px;
+    background-color: #eee;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+}
+.aboutWeb .cover h3{
+    color: var(--secondary-color);
+}
+.aboutWeb .cover div img{
+    width: 50px;
+}
+.aboutWeb .cover .cont .mark{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    transform: translateY(50%);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    left: 30px;
+    background-color: var(--secondary-color);
+
+
 }
 /*#endregion  Main*/
 
