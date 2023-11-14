@@ -41,7 +41,10 @@ html{
 body{
     --webkit-backdrop-filter: blur(10px);
 }
-
+.page{
+    height: 100vh;
+    position: relative;
+}
 .loginDiv{
     position: absolute;
     top: 50%;
