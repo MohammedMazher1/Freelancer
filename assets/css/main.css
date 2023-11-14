@@ -38,6 +38,7 @@ DDF2FD
     --font-text-size:0.9rem;
     --header-gradient-color: linear-gradient(to bottom, #164863 60%, #000);
     --footer-gradient-color: linear-gradient(to bottom, #164863 35%, #000);
+    --section-padding:40px;
 }
 
 html{
@@ -132,6 +133,7 @@ header nav .messages .message-icon::after{
     border-radius: 50%;
     color: var(--white-color);
     background-color: red;
+    
 }   
 
 header nav hr{
@@ -146,8 +148,202 @@ header nav hr{
 
 /*#region Main*/
 
+/* strart layout style */
+section{
+    height: fit-content;
+}
+.layout{
+    height: fit-content;
+    padding: 20px;
+    display: grid;
+    background:linear-gradient(to top, #164863, #000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    flex-wrap: wrap;
+}
+.layout div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-white);
+}
+.layout div:first-child{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.layout div:first-child p{
+  font-size: 18px;
+  color: var(--light-white);
+  font-weight: bold;
+
+}
+.layout div:first-child img{
+    width: 500px;
+    animation: identifier 1s alternate infinite ;
+}
+
+@keyframes identifier {
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+.layout div:last-child{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+.layout div:last-child .inputDiv{
+    background: rgba(255, 255, 255, 0.568);
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 500px;
+    border: 2px solid #ffca33;
+}
+.layout div:last-child .layoutBtn{
+    border: none;
+    padding: 10px 20px;
+    background-color: #ffca33;
+    border: ipx solid var(--secondary-color);
+}
+.layout div:last-child div input{
+    height: 100%;
+    border: none;
+    width: 80%;
+    outline: none;
+}
+.layout div:last-child div button{
+    height: 100%;
+    flex-grow: 1;
+    border: none;
+    background-color: #ffca33;
+    color: var(--secondary-color);
+}
+.layout div:last-child  .buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.layout div:last-child h3{
+    margin: 15px 0;
+} 
+.layout div:last-child div input::placeholder{
+    font-size: 14px;
+    padding-right: 10px;
+    opacity: 0.7;
+}
+/* end layout style */
+/* start business section */
+.business{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.business .album{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.business .album div{
+    width: 300px; 
+    background-color: #eee;
+    padding: 5px; 
+    height: fit-content; 
+    border-radius: 10px;
+}
+.business .album div h4,p{
+   font-size:14px ;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+.business .album div span{
+    color: goldenrod;
+}
+.business .album div img{
+    width: 100%;
+    height: 180px;   
+}
+.btnMore{
+    float: left;
+    margin-top: 10px;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--light-white);
+    border-radius: 10px;
+}
+.grid-wrapper{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+.grid-wrapper>div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.tall{
+    grid-row: span 2;
+}
+.wide{
+    grid-column: span 2;
+
+}
+.big{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.aboutWeb .cover{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aboutWeb .cover .cont{
+    width: 400px;
+    display: flex;
+    border-radius: 10px 20px;
+    gap: 10px;
+    background-color: #eee;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+}
+.aboutWeb .cover h3{
+    color: var(--secondary-color);
+}
+.aboutWeb .cover div img{
+    width: 50px;
+}
+.aboutWeb .cover .cont .mark{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    transform: translateY(50%);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    left: 30px;
+    background-color: var(--secondary-color);
 
 
+}
 /*#endregion  Main*/
 
 /*#region Footer*/
