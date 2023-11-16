@@ -55,8 +55,14 @@ header nav{
 
 header nav .logo{
     color: var(--primary-color);
+    cursor: pointer;
 }
-
+header nav .logo a{
+    text-decoration: none;
+}
+header nav .logo img{
+    width: 120px;
+}
 header nav ul li{
     padding: 1rem;
     cursor: pointer;
@@ -114,7 +120,7 @@ header nav .navigation .searsh input{
 
 header nav .navigation .searsh input:hover{
     border: none;
-    width: 29rem;
+    width: 25rem;
     outline: 0.2rem solid var(--primary-color);
 }
 
@@ -134,9 +140,27 @@ header nav .messages .message-icon::after{
     color: var(--white-color);
     background-color: red;
     
-}   
+} 
+ul.login{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+ul.login a{
+    text-decoration: none;
+}  
+ul.login li{
+    color: white;
+    width: 150px;
+    padding: 10px 10px;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
 
-header nav hr{
+}
+header nav  nav hr{
     margin: 0 auto;
     color: white;
     opacity: 1;

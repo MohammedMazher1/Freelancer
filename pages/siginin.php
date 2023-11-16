@@ -1,28 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- links -->
-
-  <link rel="stylesheet" href="../assets/lib/fontawesome-v6.4.2/css/all.css">
-  <link rel="stylesheet" href="../assets/lib/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/css/loginAndRegister.css">
-
-  <title>Login page</title>
-</head>
-<body>
-  <main>
-     <div class="loginDiv">
+<div class="page">
+<div class="loginDiv">
         <div class="login-box active">
-            <form action="">
+            <form action="siginin" method="POST">
                 <table>
                     <tr>
                         <td><label for="usrename">اسم المستخدم</label></td>
                     </tr>
                     <tr>
-                        <td><input class="inputText" type="text" name="usrename" id="usrename" placeholder="اسم المستخدم"></td>
+                        <td><input class="inputText" type="text" name="username" id="usrename" placeholder="اسم المستخدم"></td>
                     </tr>
                     <tr>
                         <td><label for="usrename">كلمة  المرور</label></td>
@@ -43,7 +29,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <span class="w-100 loginSubmit" value="ارسال">ارسال</span>
+                            <input type="submit" class="w-100 loginSubmit" value="ارسال">ارسال</span>
                         </td>
                     </tr>
                 </table>
@@ -70,7 +56,7 @@
                     <tr>
                         <td><input class="inputText" type="text" name="phone" id="phone" placeholder="776533887"></td>
                     </tr>
-                   
+                
                     <tr>
                         <td><label for="usrename">كلمة  المرور</label></td>
                     </tr>
@@ -117,24 +103,6 @@
                 </table>
             </form>
         </div>
-    </div>
-  </main>
-<script src="../assets/lib/bootstrap.bundle.min.js"></script>
-<script src="../assets/js/main.js"></script>
-<script src="../assets/lib/jquery-3.7.1.js"></script>
-<script>
-    // $('.loginDiv:last-child').addClass('active')
-    $('#login').on('click',function(){
-        $('.loginDiv .login-box').addClass('active',500)
-        // $('.loginDiv:last-child').fadeIn()
-        $('.loginDiv .registere-box').removeClass('active',500)
-    })
+</div>
+</div>
 
-    $('#register').on('click',function(){
-        $('.loginDiv .registere-box').addClass('active')
-        // $('.loginDiv:last-child').fadeIn()
-        $('.loginDiv .login-box').removeClass('active')
-    })
-</script>
-</body>
-</html>
