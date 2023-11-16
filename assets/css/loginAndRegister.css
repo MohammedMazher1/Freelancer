@@ -42,6 +42,7 @@ body{
     --webkit-backdrop-filter: blur(10px);
 }
 .page{
+    margin: 60px 0;
     height: 100vh;
     position: relative;
 }
@@ -74,6 +75,7 @@ body{
     display: block;
     text-align: center;
     cursor: pointer;
+    color: white;
 }
 .loginDiv table{
     border-spacing: 15px;
