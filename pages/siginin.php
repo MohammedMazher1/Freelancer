@@ -1,7 +1,7 @@
 
 <div class="page">
 <div class="loginDiv">
-        <div class="login-box active">
+        <!-- <div class="login-box active">
             <form action="siginin" method="POST">
                 <table>
                     <tr>
@@ -34,7 +34,7 @@
                     </tr>
                 </table>
             </form>   
-        </div>
+        </div> -->
         <div class="registere-box">
             <form action="">
                 <table>
@@ -78,7 +78,9 @@
                     </tr>
                     <tr>
                         <td>
+                        <a href="login" style="text-decoration:none">
                             <span  id="register">تسجيل الدخول</span>
+                        </a>
                         </td>
                     </tr>
                     <tr>

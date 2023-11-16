@@ -88,7 +88,7 @@
   <script src="./assets/lib/jquery-3.7.1.js"></script>
   <script src="./assets/lib/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/main.js"></script>
-  <script>
+  <!-- <script>
     // $('.loginDiv:last-child').addClass('active')
     $('#login').on('click',function(){
         $('.loginDiv .login-box').addClass('active',500)
@@ -102,7 +102,7 @@
         $('.loginDiv .login-box').removeClass('active')
     })
 
-</script>
+</script> -->
 </body>
 
 </html>

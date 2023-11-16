@@ -83,9 +83,9 @@ body{
     width: 400px;
     padding: 5px;
 }
-.active{
+/* .active{
     display: none;
-}
+} */
 .loginDiv span#login,span#register{
     cursor: pointer;
     opacity: 0.7;

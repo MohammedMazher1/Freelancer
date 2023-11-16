@@ -13,7 +13,7 @@
                 <div class="col-6 total-balance d-flex flex-column align-items-center">
                     <h3>الرصيد الكلي</h3>
                     <div class="count">
-                        <h1 class="m-5">$ 50.00</h1>
+                        <h1 class="m-5">$ 100.00</h1>
                     </div>
                 </div>    
                 <div class="col-6 free-balance d-flex flex-column align-items-center">
