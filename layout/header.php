@@ -64,7 +64,7 @@
         </ul>
         <?php }else{ ?>
             <ul class="login">
-            <a href="siginin">
+            <a href="login">
                 <li>
                 <span>تسجيل الدخول</span>
                 </li>
