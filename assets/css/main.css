@@ -120,7 +120,7 @@ header nav .navigation .searsh input{
 
 header nav .navigation .searsh input:hover{
     border: none;
-    width: 29rem;
+    width: 25rem;
     outline: 0.2rem solid var(--primary-color);
 }
 

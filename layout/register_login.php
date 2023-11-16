@@ -1,6 +1,3 @@
-<?php
-    require_once('inc/app.php');
-?>
 <div class="page">
     <div class="loginDiv">
             <div class="login-box active">
@@ -31,7 +28,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <span class="w-100 loginSubmit" value="ارسال">ارسال</span>
+                                <input type="submit" class="w-100 loginSubmit" value="ارسال">ارسال</input>
                             </td>
                         </tr>
                     </table>

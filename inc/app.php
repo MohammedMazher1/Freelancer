@@ -4,15 +4,14 @@
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
 
-// Starting a session
-
-echo 
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 // In-memory user data
 $users = [
-    'john' => 'password123',
-    'jane' => 'secret456',
+    'mz' => 'pass123',
+    'mk' => 'pass456',
 ];
 
 // Function to authenticate user
@@ -41,6 +40,7 @@ function isUserSignedIn()
 // Function to log out user
 function signout()
 {
+    // Starting a session
     // session_start();
     session_unset();
     session_destroy();

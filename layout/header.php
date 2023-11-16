@@ -30,7 +30,7 @@
           <!-- modal -->
         </div>
         <div class="logo">
-          <a href="index.php">
+          <a href="home">
           <img src="./assets/img/maher.png" alt="">
           </a>
         </div>
@@ -40,7 +40,7 @@
           <input d-none type="text" placeholder="ابحــث .....">
         </div>
         <?php if(isUserSignedIn()){ ?>
-        <ul class="d-flex m-0 list-unstyled p-0 gap-2 d-flex align-items-center">
+        <ul class="d-flex m-0 list-unstyled p-0 gap-5 d-flex align-items-center">
           <div class="notification form-floating">
             <i class="fa-regular fa-bell nav-icon notification-icon"></i>
             <!-- Notification -->
@@ -56,19 +56,21 @@
             </div>
           </div>
           <div class="profile">
-            <i class="fa-solid fa-user nav-icon"></i>
+            <a href="signout" style="test-decoration:none">
+              <i class="fa-solid fa-user nav-icon"></i>
+            </a>
             <!-- Modal profile -->
           </div>
         </ul>
         <?php }else{ ?>
             <ul class="login">
-            <a href="register_login.php">
+            <a href="siginin">
                 <li>
                 <span>تسجيل الدخول</span>
                 </li>
             </a>
             
-            <a href="register_login.php">
+            <a href="siginin">
                 <li>
                     <span>إشتراك</span>
                 </li>
