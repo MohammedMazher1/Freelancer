@@ -28,7 +28,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="submit" class="w-100 loginSubmit" value="ارسال">ارسال</input>
+                                <input type="submit" class="w-100 loginSubmit">ارسال</input>
                             </td>
                         </tr>
                     </table>
@@ -96,7 +96,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <span class="w-100 loginSubmit" value="ارسال">ارسال</span>
+                                <span class="w-100 loginSubmit">ارسال</span>
                             </td>
                         </tr>
                     </table>

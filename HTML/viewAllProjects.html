@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- links -->
+
+    <link
+      rel="stylesheet"
+      href="../assets/lib/fontawesome-v6.4.2/css/all.css" />
+    <link rel="stylesheet" href="../assets/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <title>Mhear</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="d-flex pt-4 justify-content-between px-4 d-flex flex-column">
+        <section class="navigation d-flex gap-3 mb-4">
+          <div class="nav-sidebar d-flex align-items-center">
+            <i class="fa-solid fa-bars nav-icon bars-icon"></i>
+            <!-- modal -->
+          </div>
+          <div class="logo">
+            <h1>شعار</h1>
+          </div>
+          <div class="searsh w-100 d-flex align-items-center form-floating">
+            <i
+              class="fa-solid fa-magnifying-glass nav-icon searsh-icon position-absolute"></i>
+            <!-- Searsh -->
+            <input d-none type="text" placeholder="ابحــث ....." />
+          </div>
+          <ul
+            class="d-flex m-0 list-unstyled p-0 gap-5 d-flex align-items-center">
+            <div class="notification form-floating">
+              <i class="fa-regular fa-bell nav-icon notification-icon"></i>
+              <!-- Notification -->
+              <div class="notification-container"></div>
+            </div>
+            <div class="messages form-floating">
+              <i class="fa-regular fa-envelope nav-icon message-icon"></i>
+              <!-- Message -->
+              <div class="message"></div>
+            </div>
+            <div class="profile">
+              <i class="fa-solid fa-user nav-icon"></i>
+              <!-- Modal profile -->
+            </div>
+          </ul>
+        </section>
+        <hr />
+        <section class="links">
+          <ul class="d-flex m-0 list-unstyled p-0 gap-3 justify-content-center">
+            <li class="active"><a href="#">الرئيسية</a></li>
+            <li><a href="#">تصفح المشاريع</a></li>
+            <li><a href="#">تصفح الخدمات</a></li>
+            <li><a href="#">البحث عن مستقلين</a></li>
+            <li><a href="#">عن مهير</a></li>
+            <li><a href="#">تواصل معنا</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+        <section class="viewProject">
+            <div class="page">
+              <div class="pagediv" data-bs-toggle="modal" data-bs-target="#myModal">
+                <span class="fa fa-plus"></span>
+                <div class="details">
+                  <h4>تطوير مواقع الويب</h4>
+                  <p>موقع ويب لإدارة مخيمات الويب وتطبيقات الجوال </p>
+                </div>
+              </div>
+              <div class="pagediv">
+                <span class="fa fa-plus"></span>
+                <div class="details">
+                  <h4>تطوير مواقع الويب</h4>
+                  <p>موقع ويب لإدارة مخيمات الويب وتطبيقات الجوال </p>
+                </div>
+              </div>
+              <div class="pagediv">
+                <span class="fa fa-plus"></span>
+                <div class="details">
+                  <h4>تطوير مواقع الويب</h4>
+                  <p>موقع ويب لإدارة مخيمات الويب وتطبيقات الجوال </p>
+                </div>
+              </div>
+              <div class="pagediv">
+                <span  class="fa fa-plus"></span>
+                <div class="details">
+                  <h4>تطوير تطبيقات الجوال </h4>
+                  <p>موقع ويب لإدارة مخيمات الويب وتطبيقات الجوال </p>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+
+  <!-- The Modal -->
+      <div class="modal" id="myModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+              <h5 class="modal-title"></h5>
+            </div>
+            <p class="project_description"></p>
+          <!-- Modal body -->
+          <div class="modal-body">
+              <form action="">
+                <textarea name="freelancer" placeholder="اكتب رسالتك لهذا المشروع" style="width: 100%;outline: none; height: 100px;"></textarea>
+                <input type="hidden" name="project_id" value="">
+                <input type="submit" value="تقدم" class="btn btn-primary">
+              </form>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+              <button type="button" id="modelClose" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+
+          </div>
+      </div>
+      </div>
+    <footer class="w-100 p-5 d-flex flex-column gap-5">
+      <section class="row footer-content my-5">
+        <div class="col text-center">
+          <div class="logo">
+            <h4>شعار</h4>
+          </div>
+        </div>
+        <div class="col text-center">
+          <h4>التصنيفات</h4>
+          <ul class="m-0 p-0 gap-2 list-unstyled text-center">
+            <li><a href="#">برمجة</a></li>
+            <li><a href="#">جرافيك</a></li>
+            <li><a href="#">تأليف</a></li>
+            <li><a href="#">تدريس</a></li>
+            <li><a href="#">رسم</a></li>
+            <li><a href="#">تدريب</a></li>
+          </ul>
+        </div>
+        <div class="col text-center">
+          <h4>الخدمات</h4>
+          <ul class="m-0 p-0 gap-2 list-unstyled">
+            <li><a href="#">الأقسام</a></li>
+            <li><a href="#">العروض</a></li>
+            <li><a href="#">الأكثر طلب</a></li>
+            <li><a href="#">تدريس</a></li>
+            <li><a href="#">رسم</a></li>
+            <li><a href="#">تدريب</a></li>
+          </ul>
+        </div>
+        <div class="col text-center">
+          <h4>المشاريع</h4>
+          <ul class="m-0 p-0 gap-2 list-unstyled text-center">
+            <li><a href="#">الأقسام</a></li>
+            <li><a href="#">مشاريع مفتوحة</a></li>
+            <li><a href="#">التقييمات</a></li>
+            <li><a href="#">تدريس</a></li>
+            <li><a href="#">رسم</a></li>
+            <li><a href="#">تدريب</a></li>
+          </ul>
+        </div>
+        <div class="col text-center">
+          <h4>روابط هامة</h4>
+          <ul class="m-0 p-0 gap-4 list-unstyled text-center">
+            <li><a href="#">أعلى التصنيفات</a></li>
+            <li><a href="#">الأكثر طلبا</a></li>
+            <li><a href="#">مستقل الشهر</a></li>
+            <li><a href="#">خدمات متزايدة</a></li>
+            <li><a href="#">قصص ملهمة</a></li>
+            <li><a href="#">أخر الأخبار</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="leave-message">
+        <div class="row justify-content-center">
+          <hr class="footer-divider" />
+          <div class="col-7">
+            <h3 class="text-center my-4">أترك لنا رسالة</h3>
+            <form>
+              <input
+                class="rounded d-block w-100 my-3 p-2"
+                type="email"
+                placeholder="أدخل أيميلك" />
+              <textarea
+                rows="7"
+                class="rounded d-block w-100 my-3 p-2"
+                placeholder="رسالتك"></textarea>
+              <button class="rounded w-100 py-3" type="submit">أرسـال</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="footer-end pt-4">
+        <div class="row align-items-center flex-column">
+          <div class="col-5">
+            <ul
+              class="list-unstyled d-flex gap-3 justify-content-center p-0 m-0">
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-linkedin footer-icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-github footer-icon"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter footer-icon"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-facebook footer-icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-instagram footer-icon"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 text-center mx-1">
+            <hr class="w-100 footer-divider mt-4 mb-3" />
+            <h6>
+              &copy; جميع الحقوق محفوظة لشركة
+              <span class="mkz-company"><a href="#">MKZ</a></span> للبرمجيات
+            </h6>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="../assets/lib/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/lib/jquery-3.7.1.js"></script>
+    <script>
+      $('.pagediv').on('click',function(){
+          const title = this.querySelector('div h4').innerHTML;
+          const description = this.querySelector('div p').innerHTML;
+          $('#myModal .modal-title').html(title);
+          $('#myModal .project_description ').html(description);
+          $('#myModal').show();
+        })
+        $('#modelClose').click(function(){
+          $('#myModal').hide();
+        })
+        $('#chose').on('click',function(){
+            $('.chose').css('display','none');
+            $('.description').css('display','block');
+        })
+        $('.description').on('dblclick',function(){
+            $('.chose').css('display','block');
+            $('.description').css('display','none');
+        })
+        $('.technology span').on('click',function(){
+          
+          $('.tech_insert').append(`<div class="technology inserted">${this.innerHTML}</div>`);
+        })
+        $('.tech_insert').on('click','div',function(){
+          this.remove(  );
+          
+        })
+    </script>
+  </body>
+</html>

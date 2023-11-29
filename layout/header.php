@@ -12,8 +12,8 @@
 
   <link rel="stylesheet" href="./assets/lib/fontawesome-v6.4.2/css/all.css">
   <link rel="stylesheet" href="./assets/lib/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/loginAndRegister.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
   
 
   <title>Mhear</title>
@@ -37,7 +37,7 @@
         <div class="searsh w-100 d-flex align-items-center form-floating">
           <i class="fa-solid fa-magnifying-glass nav-icon searsh-icon position-absolute"></i>
           <!-- Searsh -->
-          <input d-none type="text" placeholder="ابحــث .....">
+          <input d-none type="text" placeholder="ابحــث......">
         </div>
         <?php if(isUserSignedIn()){ ?>
         <ul class="d-flex m-0 list-unstyled p-0 gap-5 d-flex align-items-center">
@@ -84,10 +84,10 @@
       <hr>
       <section class="links">
         <ul class="d-flex m-0 list-unstyled p-0 gap-3 justify-content-center">
-          <li class="active"><a href="#">الرئيسية</a></li>
-          <li><a href="#">تصفح المشاريع</a></li>
-          <li><a href="#">تصفح الخدمات</a></li>
-          <li><a href="#">البحث عن مستقلين</a></li>
+          <li class="active"><a href="home">الرئيسية</a></li>
+          <li><a href="viewAllProjects">تصفح المشاريع</a></li>
+          <li><a href="projectPoroposal">العروض</a></li>
+          <li><a href="project">إضافة مشروع</a></li>
           <li><a href="#">عن مهير</a></li>
           <li><a href="#">تواصل معنا</a></li>
         </ul>
