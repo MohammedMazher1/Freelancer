@@ -13,13 +13,13 @@
                 <div class="col-6 total-balance d-flex flex-column align-items-center">
                     <h3>الرصيد الكلي</h3>
                     <div class="count">
-                        <h1 class="m-5">$ 100.00</h1>
+                        <h1 class="m-5" style="color:#164863">$ 100.00</h1>
                     </div>
                 </div>    
                 <div class="col-6 free-balance d-flex flex-column align-items-center">
                     <h3>الرصيد المتاح</h3>
                     <div class="count">
-                        <h1 class="m-5">$ 50.00</h1>
+                        <h1 class="m-5" style="color:#164863">$ 50.00</h1>
                     </div>
                 </div> 
             </div>  
@@ -39,7 +39,7 @@
             <h3>خطوات أكمال الحساب</h3>
             <hr>
             <div class="step-init-profile w-100 pe-4 d-flex gap-4 flex-column align-items-start">
-                <label><input class="ms-3" type="radio">أضف مشروعك الأول</label>
+                <a href="project"><label><input class="ms-3" type="radio">أضف مشروعك الأول</label></a>
                 <label><input class="ms-3" type="radio">أنشئ مؤسسة </label>
             </div>
         </div>
@@ -49,7 +49,9 @@
                 <div class="project-num">
                     <h1>150</h1>
                 </div>
-                <button class="rounded border-0 shadow w-100 px-4 py-2 mt-4"><i class="fa-solid fas fa-plus ms-3"></i>أضف مشروع</button>
+                <a href="project">
+                    <button class="rounded border-0 shadow w-100 px-4 py-2 mt-4"><i class="fa-solid fas fa-plus ms-3"></i>أضف مشروع</button>
+                </a>
             </div>
             <div class="col-4 d-flex align-items-between flex-column p-2 gap-4">
                 <div class="row mx-0">
@@ -144,88 +146,11 @@
             </div>
         </div>
         <div class="col-8 shadow rounded p-5 d-flex gap-3" style="background-color:#fff">
-            <div class="col-4 d-flex gap-5 flex-column align-items-center">
-                <h2>مشاريعي</h2>
-                <div class="project-num">
-                    <h1>150</h1>
-                </div>
-                <button class="rounded border-0 shadow w-100 px-4 py-2 mt-4"><i class="fa-solid fas fa-plus ms-3"></i>أضف مشروع</button>
-            </div>
-            <div class="col-4 d-flex align-items-between flex-column p-2 gap-4">
-                <div class="row mx-0">
-                    <div class="col-6 pe-1">
-                        <p class="m-0">مسودة</p>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <p class="m-0 text-start">20%</p>
-                    </div>
-                    <input class="w-100 mt-2 p-0" type="range" value="50">
-                </div>
-                <div class="row mx-0">
-                    <div class="col-6 pe-1">
-                        <p class="m-0">المفتوحة</p>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <p class="m-0 text-start">20%</p>
-                    </div>
-                    <input class="w-100 mt-2 p-0" type="range" value="50">
-                </div>
-                <div class="row mx-0">
-                    <div class="col-6 pe-1">
-                        <p class="m-0">المكتملة</p>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <p class="m-0 text-start">20%</p>
-                    </div>
-                    <input class="w-100 mt-2 p-0" type="range" value="50">
-                </div>
-                <div class="row mx-0">
-                    <div class="col-6 pe-1">
-                        <p class="m-0">الملغاه</p>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <p class="m-0 text-start">20%</p>
-                    </div>
-                    <input class="w-100 mt-2 p-0" type="range" value="50">
-                </div>
-            </div>
-            <div class="col-4 d-flex align-items-between flex-column p-2 gap-4">
-                <div class="row mx-0">
-                    <div class="col-6 pe-1">
-                        <p class="m-0">قيد المراجعة</p>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <p class="m-0 text-start">20%</p>
-                    </div>
-                    <input class="w-100 mt-2 p-0" type="range" value="50">
-                </div>
-                <div class="row mx-0">
-                    <div class="col-6 pe-1">
-                        <p class="m-0">قيد التنفيد</p>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <p class="m-0 text-start">20%</p>
-                    </div>
-                    <input class="w-100 mt-2 p-0" type="range" value="50">
-                </div>
-                <div class="row mx-0">
-                    <div class="col-6 pe-1">
-                        <p class="m-0">المغلقة</p>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <p class="m-0 text-start">20%</p>
-                    </div>
-                    <input class="w-100 mt-2 p-0" type="range" value="50">
-                </div>
-                <div class="row mx-0">
-                    <div class="col-6 pe-1">
-                        <p class="m-0">المرفوضة</p>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <p class="m-0 text-start">20%</p>
-                    </div>
-                    <input class="w-100 mt-2 p-0" type="range" value="50">
-                </div>
+            <div class="col-12 d-flex gap-5 flex-column align-items-center">
+                <h2>المؤسسات</h2>  
+                <p>حل مخصص للشركات والمؤسسات يساعدها على تنمية اعمالها وتسهيل علملية توظيف المستقلين عن طريق نظام يُمكن المدراء من إضافة اعضاء الشركة أو فريق 
+                    العمل أو اي شخص اخر للمساعدة في عملية التوظيف والتواصل مع المستقلين وفق صلاحيات محدده
+                </p>
             </div>
         </div>
     </div>

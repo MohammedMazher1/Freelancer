@@ -88,21 +88,51 @@
   <script src="./assets/lib/jquery-3.7.1.js"></script>
   <script src="./assets/lib/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/main.js"></script>
-  <!-- <script>
-    // $('.loginDiv:last-child').addClass('active')
-    $('#login').on('click',function(){
-        $('.loginDiv .login-box').addClass('active',500)
-        // $('.loginDiv:last-child').fadeIn()
-        $('.loginDiv .registere-box').removeClass('active',500)
-    })
+   <script>
+    $('.pagediv').on('click',function(){
+          const title = this.querySelector('div h4').innerHTML;
+          const project_id = this.querySelector('div span').innerHTML;
+          
+          const description = this.querySelector('div p').innerHTML;
+          $('#myModal .modal-title').html(title);
+          $('#myModal .project_description ').html(description);
+          $('#model_input').val(project_id);
+          $('#myModal').show();
+        })
+        $('#modelClose').click(function(){
+          $('#myModal').hide();
+        })
+        
+     $('#chose').on('click',function(){
+            $('.chose').css('display','none');
+            $('.description').css('display','block');
+        })
+        $('.description').on('dblclick',function(){
+            $('.chose').css('display','block');
+            $('.description').css('display','none');
+        })
+        $('.technology span').on('click',function(){
+          
+          $('.tech_insert').append(`<div class="technology inserted">${this.innerHTML}</div>`);
+        })
+        $('.tech_insert').on('click','div',function(){
+          this.remove(  );
+          
+        })
+    // // $('.loginDiv:last-child').addClass('active')
+    // $('#login').on('click',function(){
+    //     $('.loginDiv .login-box').addClass('active',500)
+    //     // $('.loginDiv:last-child').fadeIn()
+    //     $('.loginDiv .registere-box').removeClass('active',500)
+    // })
 
-    $('#register').on('click',function(){
-        $('.loginDiv .registere-box').addClass('active')
-        // $('.loginDiv:last-child').fadeIn()
-        $('.loginDiv .login-box').removeClass('active')
-    })
+    // $('#register').on('click',function(){
+    //     $('.loginDiv .registere-box').addClass('active')
+    //     // $('.loginDiv:last-child').fadeIn()
+    //     $('.loginDiv .login-box').removeClass('active')
+    // })
 
-</script> -->
+</script>
 </body>
 
 </html>

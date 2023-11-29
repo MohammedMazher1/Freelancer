@@ -4,19 +4,15 @@
 define('ROOT_PATH', '/freelancer');
 
 require_once('inc/app.php');
-
-// Get the file name from the URL
-$rootUri = $_SERVER['REQUEST_URI'];
-// echo "<h1>".$rootUri ."</h1>";
-
-$pageName = str_replace(ROOT_PATH,"",$rootUri);
-// echo "<h1>".$pageName."</h1>";
+require_once('core/database.php');
+$pageName = $_SERVER['REQUEST_URI'];
+$pageName = str_replace(ROOT_PATH,"",$pageName);
+ 
 if($pageName == "/"){
     $pageName = "/home";
 }
 // echo isset($_POST["username"])?"<h1>".$_POST["username"]."</h1>":'';
 // echo "<h1>".$_POST["username"]."</h1>";
-
 
 if($pageName == "/siginin"){
     if(isUserSignedIn()){
@@ -39,6 +35,47 @@ if($pageName == "/siginin"){
     // Redirect to /
     header("Location: ".ROOT_PATH);
     exit;
+}
+else if ($pageName == "/createProject") {
+    if(isUserSignedIn()){
+        if(isset($_POST['name']) &&(isset($_POST['description']))){
+            if(addproject($_POST['name'], $_POST['description'],$_SESSION['user_id'])){
+                // Redirect to /
+                header("Location: ".ROOT_PATH."/dashbord");
+                exit;
+            }
+        }else{
+            header("Location: ".ROOT_PATH."/project");
+            exit;
+        }
+    }
+    else{
+        header("Location: ".ROOT_PATH.'/signout');
+                exit;
+    }
+}else if ($pageName == "/proposal") {
+    if(isUserSignedIn()){
+        if(isset($_POST['proposal']) && (isset($_POST['project_id'])) && $_POST['proposal']!=""){
+            echo $_POST['project_id'];
+            if(proposal($_POST['proposal'], $_POST['project_id'],$_SESSION['user_id'])){
+                // Redirect to /
+                header("Location: ".ROOT_PATH);
+                exit;
+            }
+        }else{
+            header("Location: ".ROOT_PATH."/viewAllProjects");
+            exit;
+        }
+    }
+    else{
+        header("Location: ".ROOT_PATH.'/login');
+                exit;
+    }
+}else if ($pageName == "/projectPoroposal") {
+    if(!isUserSignedIn()){
+        header("Location: ".ROOT_PATH.'/login');
+        exit;
+    }
 }
 
 
