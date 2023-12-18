@@ -47,9 +47,7 @@ html{
     direction: rtl;
 }
 
-/*#endregion Variable */
 
-/*#region Header*/
 
 header nav{
     background: var(--header-gradient-color)
@@ -93,13 +91,13 @@ header nav ul li a{
 }
 
 header nav .nav-icon{
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     cursor: pointer;
     color: var(--white-color);
 }
 
 header nav .navigation .bars-icon{
-    font-size: 2.3rem;
+    font-size: 2.4rem;
 }
 
 header nav .navigation .searsh{
