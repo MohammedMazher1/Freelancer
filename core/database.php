@@ -5,7 +5,6 @@ function db_connect($servername, $username, $password, $dbname){
     $conn = mysqli_connect($servername, $username, $password, $dbname);
 
     if (!$conn) {
-        //die("Connection failed: " . mysqli_connect_error());
         return array("status" => "error", "code" => 401, "message" => mysqli_connect_error());
     }
 
@@ -21,14 +20,7 @@ function db_close($conn){
     }
 }
 
-// function db_execute_query($conn, $sql){
-//     try{
-//         $result = mysqli_query($conn, $sql);
-//     }catch(Exception $e) {
-//         return array("status" => "error", "code" => 403, "message" => $e->getMessage());
-//     }
-//     return $result;
-// }
+
 function db_execute_query($conn, $sql){
     try {
         $result = mysqli_query($conn, $sql);
