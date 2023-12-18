@@ -71,7 +71,7 @@ header nav ul li{
 header nav ul li.active{
     border-bottom: 0.2rem solid var(--primary-color);
 }
-
+/* add the hover for the nav li */
 header nav ul li:hover{
     background-color: var(--primary-color);
     cursor: pointer;
